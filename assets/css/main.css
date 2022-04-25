@@ -4771,3 +4771,11 @@ body.is-navPanel-visible #navPanel {
         max-width: 20em;
     }
 }
+
+.buyButton {
+    display: block;
+    margin: 0 auto;
+    background: white;
+    padding: 1em;
+    border-radius: 0.5em;
+}
