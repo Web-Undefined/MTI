@@ -73,17 +73,20 @@
 		<!-- Section -->
 		<section class="main alt" id="first">
 			<header>
-				<h2>Current Classes<br>June 2022</h2>
-				<p><strong>Three classes included are: </strong><br>- Ethics of Dealing with Various Client Behaviors
-					<br>- Shoulder
-					Injuries,
-					Movement, and Functionality <br>- Hip Mobility and Pain Syndromes <br><strong>Location:</strong>
-					Rhode Island
-					<br><strong>Date:</strong> June 4th - 5th 2022
+				<h2>Current Classes<br>July 2022</h2>
+				<div class="image centerImg" style="padding-bottom: 2em;"><img class="oneToOneSizing"
+						src="images/MDClass.png" alt="" /></div>
+				<p><strong>Location:</strong>
+					Maryland
+					<br><strong>Date:</strong> July 23th - 24th 2022
 				</p>
-				<div style="display: block; margin: 0 auto; background: white; padding: 1em; border-radius: 0.5em;"
-					id='product-component-1649956262987'>
+
+				<div class="buyButtonContainer">
+					<div class="buyButton" id='product-component-1657209504477'></div>
+					<div class="buyButton" id='product-component-1657209980173'></div>
 				</div>
+
+
 			</header>
 			<!--<div class="inner">
 				<article class="post style2">
@@ -157,6 +160,14 @@
 			<header>
 				<h2>Upcoming Classes</h2>
 				<p></p>
+				<div class="image centerImg" style="padding-bottom: 2em;"><img class="oneToOneSizing"
+						src="images/AZClass.png" alt="" /></div>
+
+
+				<div class="buyButtonContainer">
+					<div id='product-component-1657209805998' class="buyButton"></div>
+					<div id='product-component-1657210554328' class="buyButton"></div>
+				</div>
 			</header>
 			<div class="inner">
 				<!--<article class="post alt">
@@ -172,143 +183,10 @@
 							<li><a href="#" class="button next">Learn More</a></li>
 						</ul>
 					</div>-->
-				<div class="image centerImg" style="padding-bottom: 2em;"><img class="oneToOneSizing"
-						src="images/IASTMad.jpg" alt="" /></div>
-				<div id='product-component-1650905311866' class="buyButton"></div>
-				<script type="text/javascript">
-					/*<![CDATA[*/
-					(function () {
-						var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-						if (window.ShopifyBuy) {
-							if (window.ShopifyBuy.UI) {
-								ShopifyBuyInit();
-							} else {
-								loadScript();
-							}
-						} else {
-							loadScript();
-						}
-						function loadScript() {
-							var script = document.createElement('script');
-							script.async = true;
-							script.src = scriptURL;
-							(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-							script.onload = ShopifyBuyInit;
-						}
-						function ShopifyBuyInit() {
-							var client = ShopifyBuy.buildClient({
-								domain: 'themusculartherapyinstitute.myshopify.com',
-								storefrontAccessToken: '681e6e10352c494bac00c142e1794b3c',
-							});
-							ShopifyBuy.UI.onReady(client).then(function (ui) {
-								ui.createComponent('product', {
-									id: '7220840825007',
-									node: document.getElementById('product-component-1650905311866'),
-									moneyFormat: '%24%7B%7Bamount%7D%7D',
-									options: {
-										"product": {
-											"styles": {
-												"product": {
-													"@media (min-width: 601px)": {
-														"max-width": "calc(25% - 20px)",
-														"margin-left": "20px",
-														"margin-bottom": "50px"
-													}
-												},
-												"button": {
-													":hover": {
-														"background-color": "#2b92b8"
-													},
-													"background-color": "#30a2cc",
-													":focus": {
-														"background-color": "#2b92b8"
-													}
-												}
-											},
-											"contents": {
-												"button": false,
-												"buttonWithQuantity": true
-											},
-											"text": {
-												"button": "Add to cart"
-											}
-										},
-										"productSet": {
-											"styles": {
-												"products": {
-													"@media (min-width: 601px)": {
-														"margin-left": "-20px"
-													}
-												}
-											}
-										},
-										"modalProduct": {
-											"contents": {
-												"img": false,
-												"imgWithCarousel": true,
-												"button": false,
-												"buttonWithQuantity": true
-											},
-											"styles": {
-												"product": {
-													"@media (min-width: 601px)": {
-														"max-width": "100%",
-														"margin-left": "0px",
-														"margin-bottom": "0px"
-													}
-												},
-												"button": {
-													":hover": {
-														"background-color": "#2b92b8"
-													},
-													"background-color": "#30a2cc",
-													":focus": {
-														"background-color": "#2b92b8"
-													}
-												}
-											},
-											"text": {
-												"button": "Add to cart"
-											}
-										},
-										"option": {},
-										"cart": {
-											"styles": {
-												"button": {
-													":hover": {
-														"background-color": "#2b92b8"
-													},
-													"background-color": "#30a2cc",
-													":focus": {
-														"background-color": "#2b92b8"
-													}
-												}
-											},
-											"text": {
-												"total": "Subtotal",
-												"button": "Checkout"
-											}
-										},
-										"toggle": {
-											"styles": {
-												"toggle": {
-													"background-color": "#30a2cc",
-													":hover": {
-														"background-color": "#2b92b8"
-													},
-													":focus": {
-														"background-color": "#2b92b8"
-													}
-												}
-											}
-										}
-									},
-								});
-							});
-						}
-					})();
-/*]]>*/
-				</script>
+
+
+
+
 				<!--</article>
 				<article class="post">
 					<div class="content">
@@ -371,7 +249,10 @@
 			</div>
 		</section>
 
-		<!-- Buy Button Script -->
+		<!-- Buy Button Scripts -->
+
+		<!-- MD -->
+
 		<script type="text/javascript">
 			/*<![CDATA[*/
 			(function () {
@@ -399,8 +280,419 @@
 					});
 					ShopifyBuy.UI.onReady(client).then(function (ui) {
 						ui.createComponent('product', {
-							id: '7211254775983',
-							node: document.getElementById('product-component-1649956262987'),
+							id: '7307722981551',
+							node: document.getElementById('product-component-1657209504477'),
+							moneyFormat: '%24%7B%7Bamount%7D%7D',
+							options: {
+								"product": {
+									"styles": {
+										"product": {
+											"@media (min-width: 601px)": {
+												"max-width": "calc(25% - 20px)",
+												"margin-left": "20px",
+												"margin-bottom": "50px"
+											}
+										},
+										"button": {
+											":hover": {
+												"background-color": "#2b92b8"
+											},
+											"background-color": "#30a2cc",
+											":focus": {
+												"background-color": "#2b92b8"
+											}
+										}
+									},
+									"contents": {
+										"button": false,
+										"buttonWithQuantity": true
+									},
+									"text": {
+										"button": "Add to cart"
+									}
+								},
+								"productSet": {
+									"styles": {
+										"products": {
+											"@media (min-width: 601px)": {
+												"margin-left": "-20px"
+											}
+										}
+									}
+								},
+								"modalProduct": {
+									"contents": {
+										"img": false,
+										"imgWithCarousel": true,
+										"button": false,
+										"buttonWithQuantity": true
+									},
+									"styles": {
+										"product": {
+											"@media (min-width: 601px)": {
+												"max-width": "100%",
+												"margin-left": "0px",
+												"margin-bottom": "0px"
+											}
+										},
+										"button": {
+											":hover": {
+												"background-color": "#2b92b8"
+											},
+											"background-color": "#30a2cc",
+											":focus": {
+												"background-color": "#2b92b8"
+											}
+										}
+									},
+									"text": {
+										"button": "Add to cart"
+									}
+								},
+								"option": {},
+								"cart": {
+									"styles": {
+										"button": {
+											":hover": {
+												"background-color": "#2b92b8"
+											},
+											"background-color": "#30a2cc",
+											":focus": {
+												"background-color": "#2b92b8"
+											}
+										}
+									},
+									"text": {
+										"total": "Subtotal",
+										"button": "Checkout"
+									}
+								},
+								"toggle": {
+									"styles": {
+										"toggle": {
+											"background-color": "#30a2cc",
+											":hover": {
+												"background-color": "#2b92b8"
+											},
+											":focus": {
+												"background-color": "#2b92b8"
+											}
+										}
+									}
+								}
+							},
+						});
+					});
+				}
+			})();
+/*]]>*/
+		</script>
+
+		<!-- AZ -->
+
+		<script type="text/javascript">
+			/*<![CDATA[*/
+			(function () {
+				var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+				if (window.ShopifyBuy) {
+					if (window.ShopifyBuy.UI) {
+						ShopifyBuyInit();
+					} else {
+						loadScript();
+					}
+				} else {
+					loadScript();
+				}
+				function loadScript() {
+					var script = document.createElement('script');
+					script.async = true;
+					script.src = scriptURL;
+					(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+					script.onload = ShopifyBuyInit;
+				}
+				function ShopifyBuyInit() {
+					var client = ShopifyBuy.buildClient({
+						domain: 'themusculartherapyinstitute.myshopify.com',
+						storefrontAccessToken: '681e6e10352c494bac00c142e1794b3c',
+					});
+					ShopifyBuy.UI.onReady(client).then(function (ui) {
+						ui.createComponent('product', {
+							id: '7307723997359',
+							node: document.getElementById('product-component-1657209805998'),
+							moneyFormat: '%24%7B%7Bamount%7D%7D',
+							options: {
+								"product": {
+									"styles": {
+										"product": {
+											"@media (min-width: 601px)": {
+												"max-width": "calc(25% - 20px)",
+												"margin-left": "20px",
+												"margin-bottom": "50px"
+											}
+										},
+										"button": {
+											":hover": {
+												"background-color": "#2b92b8"
+											},
+											"background-color": "#30a2cc",
+											":focus": {
+												"background-color": "#2b92b8"
+											}
+										}
+									},
+									"contents": {
+										"button": false,
+										"buttonWithQuantity": true
+									},
+									"text": {
+										"button": "Add to cart"
+									}
+								},
+								"productSet": {
+									"styles": {
+										"products": {
+											"@media (min-width: 601px)": {
+												"margin-left": "-20px"
+											}
+										}
+									}
+								},
+								"modalProduct": {
+									"contents": {
+										"img": false,
+										"imgWithCarousel": true,
+										"button": false,
+										"buttonWithQuantity": true
+									},
+									"styles": {
+										"product": {
+											"@media (min-width: 601px)": {
+												"max-width": "100%",
+												"margin-left": "0px",
+												"margin-bottom": "0px"
+											}
+										},
+										"button": {
+											":hover": {
+												"background-color": "#2b92b8"
+											},
+											"background-color": "#30a2cc",
+											":focus": {
+												"background-color": "#2b92b8"
+											}
+										}
+									},
+									"text": {
+										"button": "Add to cart"
+									}
+								},
+								"option": {},
+								"cart": {
+									"styles": {
+										"button": {
+											":hover": {
+												"background-color": "#2b92b8"
+											},
+											"background-color": "#30a2cc",
+											":focus": {
+												"background-color": "#2b92b8"
+											}
+										}
+									},
+									"text": {
+										"total": "Subtotal",
+										"button": "Checkout"
+									}
+								},
+								"toggle": {
+									"styles": {
+										"toggle": {
+											"background-color": "#30a2cc",
+											":hover": {
+												"background-color": "#2b92b8"
+											},
+											":focus": {
+												"background-color": "#2b92b8"
+											}
+										}
+									}
+								}
+							},
+						});
+					});
+				}
+			})();
+/*]]>*/
+		</script>
+
+		<!-- Tool 1 -->
+
+		<script type="text/javascript">
+			/*<![CDATA[*/
+			(function () {
+				var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+				if (window.ShopifyBuy) {
+					if (window.ShopifyBuy.UI) {
+						ShopifyBuyInit();
+					} else {
+						loadScript();
+					}
+				} else {
+					loadScript();
+				}
+				function loadScript() {
+					var script = document.createElement('script');
+					script.async = true;
+					script.src = scriptURL;
+					(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+					script.onload = ShopifyBuyInit;
+				}
+				function ShopifyBuyInit() {
+					var client = ShopifyBuy.buildClient({
+						domain: 'themusculartherapyinstitute.myshopify.com',
+						storefrontAccessToken: '681e6e10352c494bac00c142e1794b3c',
+					});
+					ShopifyBuy.UI.onReady(client).then(function (ui) {
+						ui.createComponent('product', {
+							id: '7307735826607',
+							node: document.getElementById('product-component-1657209980173'),
+							moneyFormat: '%24%7B%7Bamount%7D%7D',
+							options: {
+								"product": {
+									"styles": {
+										"product": {
+											"@media (min-width: 601px)": {
+												"max-width": "calc(25% - 20px)",
+												"margin-left": "20px",
+												"margin-bottom": "50px"
+											}
+										},
+										"button": {
+											":hover": {
+												"background-color": "#2b92b8"
+											},
+											"background-color": "#30a2cc",
+											":focus": {
+												"background-color": "#2b92b8"
+											}
+										}
+									},
+									"contents": {
+										"button": false,
+										"buttonWithQuantity": true
+									},
+									"text": {
+										"button": "Add to cart"
+									}
+								},
+								"productSet": {
+									"styles": {
+										"products": {
+											"@media (min-width: 601px)": {
+												"margin-left": "-20px"
+											}
+										}
+									}
+								},
+								"modalProduct": {
+									"contents": {
+										"img": false,
+										"imgWithCarousel": true,
+										"button": false,
+										"buttonWithQuantity": true
+									},
+									"styles": {
+										"product": {
+											"@media (min-width: 601px)": {
+												"max-width": "100%",
+												"margin-left": "0px",
+												"margin-bottom": "0px"
+											}
+										},
+										"button": {
+											":hover": {
+												"background-color": "#2b92b8"
+											},
+											"background-color": "#30a2cc",
+											":focus": {
+												"background-color": "#2b92b8"
+											}
+										}
+									},
+									"text": {
+										"button": "Add to cart"
+									}
+								},
+								"option": {},
+								"cart": {
+									"styles": {
+										"button": {
+											":hover": {
+												"background-color": "#2b92b8"
+											},
+											"background-color": "#30a2cc",
+											":focus": {
+												"background-color": "#2b92b8"
+											}
+										}
+									},
+									"text": {
+										"total": "Subtotal",
+										"button": "Checkout"
+									}
+								},
+								"toggle": {
+									"styles": {
+										"toggle": {
+											"background-color": "#30a2cc",
+											":hover": {
+												"background-color": "#2b92b8"
+											},
+											":focus": {
+												"background-color": "#2b92b8"
+											}
+										}
+									}
+								}
+							},
+						});
+					});
+				}
+			})();
+/*]]>*/
+		</script>
+
+		<!-- Tool 2 -->
+
+		<script type="text/javascript">
+			/*<![CDATA[*/
+			(function () {
+				var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+				if (window.ShopifyBuy) {
+					if (window.ShopifyBuy.UI) {
+						ShopifyBuyInit();
+					} else {
+						loadScript();
+					}
+				} else {
+					loadScript();
+				}
+				function loadScript() {
+					var script = document.createElement('script');
+					script.async = true;
+					script.src = scriptURL;
+					(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+					script.onload = ShopifyBuyInit;
+				}
+				function ShopifyBuyInit() {
+					var client = ShopifyBuy.buildClient({
+						domain: 'themusculartherapyinstitute.myshopify.com',
+						storefrontAccessToken: '681e6e10352c494bac00c142e1794b3c',
+					});
+					ShopifyBuy.UI.onReady(client).then(function (ui) {
+						ui.createComponent('product', {
+							id: '7307735826607',
+							node: document.getElementById('product-component-1657210554328'),
 							moneyFormat: '%24%7B%7Bamount%7D%7D',
 							options: {
 								"product": {

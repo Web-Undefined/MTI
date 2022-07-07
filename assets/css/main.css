@@ -4779,3 +4779,12 @@ body.is-navPanel-visible #navPanel {
     padding: 1em;
     border-radius: 0.5em;
 }
+.buyButtonContainer {
+    display: flex;
+    gap: 1em;
+}
+@media screen and (max-width: 620px) {
+    .buyButtonContainer {
+        flex-direction: column;
+    }
+}
