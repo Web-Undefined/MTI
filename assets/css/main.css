@@ -4788,3 +4788,7 @@ body.is-navPanel-visible #navPanel {
         flex-direction: column;
     }
 }
+
+.centered {
+    text-align: center;
+}
