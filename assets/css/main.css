@@ -4792,3 +4792,82 @@ body.is-navPanel-visible #navPanel {
 .centered {
     text-align: center;
 }
+
+/* Store Cards */
+
+.testimonials {
+    padding: 40px 0;
+    background: #f1f1f1;
+    color: #434343;
+    text-align: center;
+}
+.testimonial p {
+    color: #292f33 !important;
+    margin-bottom: 1em;
+}
+.innerTest {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+    overflow: visible;
+}
+.rowTest {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.colTest {
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.testimonial {
+    transition: filter 0.3s;
+    background: #fff;
+    padding: 30px;
+    border-radius: 2.5%;
+    filter: drop-shadow(0 0 0rem #a0cbcf);
+}
+.testimonial:hover {
+    filter: drop-shadow(0 0 1.5rem #4fc2cd);
+}
+.name {
+    font-size: 1.25em;
+    margin: 10px 0;
+    color: #292f33 !important;
+}
+.stars {
+    color: #4fc2cd;
+    margin-bottom: 10px;
+}
+.store-img {
+    max-width: 100%;
+}
+
+.gradient-backdrop {
+    background: linear-gradient(
+        0deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 1) 50%,
+        rgba(245, 245, 245, 1) 100%
+    );
+}
+
+.price {
+    margin-bottom: 0 !important;
+}
+
+@media screen and (max-width: 960px) {
+    .colTest {
+        flex: 100%;
+        max-width: 80%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .colTest {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
