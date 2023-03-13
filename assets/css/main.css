@@ -3422,6 +3422,14 @@ table.alt tbody tr td {
     }
 }
 
+.blue {
+    background-color: #031952 !important;
+    color: #f1f1f1 !important;
+}
+.blue h2 {
+    color: #f1f1f1 !important;
+}
+
 /* Main */
 
 #wrapper > .main {
