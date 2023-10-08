@@ -4831,6 +4831,7 @@ body.is-navPanel-visible #navPanel {
     padding: 30px;
     border-radius: 2.5%;
     filter: drop-shadow(0 0 0rem #a0cbcf);
+    height: 100%;
 }
 .testimonial:hover {
     filter: drop-shadow(0 0 1.5rem #4fc2cd);
