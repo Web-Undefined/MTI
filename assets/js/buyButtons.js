@@ -1143,7 +1143,7 @@
             ui.createComponent("product", {
                 id: "7707559461039",
                 node: document.getElementById(
-                    "product-component-1705357053764"
+                    "product-component-1705357467212"
                 ),
                 moneyFormat: "%24%7B%7Bamount%7D%7D",
                 options: {
