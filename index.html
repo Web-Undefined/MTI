@@ -91,9 +91,52 @@
 				<!-- <div style="padding-bottom: 2em;"><video loop autoplay muted class="oneToOneSizing"
 						src="images/IASTM-clip.mp4" alt="" style="display: block;"></video></div> -->
 
-				<div class="buyButtonContainer">
-					<div id='product-component-1709334006882' class="buyButton"></div>
+				<div style="display: flex; justify-content: center; padding-bottom: 1em">
+					<select id="panelSelector" onchange="switchPanel()" style="width: 60%;">
+						<option value="panel1">Weekend Bundle ($450)</option>
+						<option value="panel2">Shoulder Injuries & Pain Syndromes Class ($185)</option>
+						<option value="panel3">Cryotherapy Class ($225)</option>
+						<option value="panel4">Hip Mobility ($225)</option>
+					</select>
 				</div>
+
+				<div id="panel1" style="">
+					<div class="buyButtonContainer">
+						<div id='product-component-1709334006882' class="buyButton"></div>
+					</div>
+				</div>
+				<div id="panel2" style="">
+					<div class="buyButtonContainer">
+						<div id='product-component-1709520962906' class="buyButton"></div>
+					</div>
+				</div>
+				<div id="panel3" style="">
+					<div class="buyButtonContainer">
+						<div id='product-component-1709521240360' class="buyButton"></div>
+					</div>
+				</div>
+				<div id="panel4" style="">
+					<div class="buyButtonContainer">
+						<div id='product-component-1709522303104' class="buyButton"></div>
+					</div>
+				</div>
+
+				<script>
+					function switchPanel() {
+						// Get the selected option from the dropdown
+						var selectedOption = document.getElementById("panelSelector").value;
+
+						// Hide all panels
+						document.getElementById("panel1").style.display = "none";
+						document.getElementById("panel2").style.display = "none";
+						document.getElementById("panel3").style.display = "none";
+						document.getElementById("panel4").style.display = "none";
+
+						// Show the selected panel
+						document.getElementById(selectedOption).style.display = "block";
+					}
+				</script>
+
 			</header>
 			<div class="inner narrow">
 				<form action="https://formspree.io/f/xgednlvp" method="post">
@@ -227,11 +270,51 @@
 				<div class="image centerImg" style="padding-bottom: 2em; margin-top: 3em;"><img class="oneToOneSizing"
 						src="images/april-2024.png" alt="Massage Therapy Course Flier" /></div>
 
-
-				<div class="buyButtonContainer">
-					<div id='product-component-1705355901565' class="buyButton"></div>
-					<!-- <div id='product-component-1657209980173' class="buyButton"></div> -->
+				<div style="display: flex; justify-content: center; padding-bottom: 1em">
+					<select id="2panelSelector" onchange="switchPanel2()" style="width: 60%; color: black">
+						<option value="2panel1">Weekend Bundle ($450)</option>
+						<option value="2panel2">Shoulder Injuries & Pain Syndromes Class ($185)</option>
+						<option value="2panel3">Cryotherapy Class ($225)</option>
+						<option value="2panel4">Hip Mobility ($225)</option>
+					</select>
 				</div>
+
+				<div id="2panel1">
+					<div class="buyButtonContainer">
+						<div id='product-component-1705355901565' class="buyButton"></div>
+					</div>
+				</div>
+				<div id="2panel2">
+					<div class="buyButtonContainer">
+						<div id='product-component-1709522578854' class="buyButton"></div>
+					</div>
+				</div>
+				<div id="2panel3">
+					<div class="buyButtonContainer">
+						<div id='product-component-1709522629599' class="buyButton"></div>
+					</div>
+				</div>
+				<div id="2panel4">
+					<div class="buyButtonContainer">
+						<div id='product-component-1709522675982' class="buyButton"></div>
+					</div>
+				</div>
+
+				<script>
+					function switchPanel2() {
+						// Get the selected option from the dropdown
+						var selectedOption = document.getElementById("2panelSelector").value;
+
+						// Hide all panels
+						document.getElementById("2panel1").style.display = "none";
+						document.getElementById("2panel2").style.display = "none";
+						document.getElementById("2panel3").style.display = "none";
+						document.getElementById("2panel4").style.display = "none";
+
+						// Show the selected panel
+						document.getElementById(selectedOption).style.display = "block";
+					}
+				</script>
 			</header>
 
 			<!-- <div class="image centerImg" style="padding-bottom: 2em;"><img class="oneToOneSizing"
@@ -522,6 +605,18 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/buyButtons.js"></script>
+	<script>
+		$(document).ready(function () {
+			setTimeout(() => {
+				document.getElementById("panel2").style.display = "none";
+				document.getElementById("panel3").style.display = "none";
+				document.getElementById("panel4").style.display = "none";
+				document.getElementById("2panel2").style.display = "none";
+				document.getElementById("2panel3").style.display = "none";
+				document.getElementById("2panel4").style.display = "none";
+			}, "1000");
+		});
+	</script>
 
 </body>
 

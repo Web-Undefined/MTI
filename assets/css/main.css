@@ -4878,3 +4878,11 @@ body.is-navPanel-visible #navPanel {
         max-width: 100%;
     }
 }
+
+.panel {
+    display: none;
+}
+
+.panel.active {
+    display: block !important;
+}
