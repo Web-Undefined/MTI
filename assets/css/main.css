@@ -4886,3 +4886,7 @@ body.is-navPanel-visible #navPanel {
 .panel.active {
     display: block !important;
 }
+
+.panels {
+    display: none;
+}
