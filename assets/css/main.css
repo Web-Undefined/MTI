@@ -4832,6 +4832,7 @@ body.is-navPanel-visible #navPanel {
     border-radius: 2.5%;
     filter: drop-shadow(0 0 0rem #a0cbcf);
     height: 100%;
+    cursor: pointer;
 }
 .testimonial:hover {
     filter: drop-shadow(0 0 1.5rem #4fc2cd);
@@ -4889,4 +4890,87 @@ body.is-navPanel-visible #navPanel {
 
 .panels {
     display: none;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 2em;
+    border: 1px solid #888;
+    width: 40em;
+    border-radius: 1vw;
+}
+/* .modal-content p {
+    font-size: 16px;
+} */
+.modal-header {
+    font-size: 1.5em;
+}
+.modal b,
+.modal p,
+.modal ul,
+.modal li {
+    color: black !important;
+}
+@media screen and (max-width: 1680px) {
+    .modal-content {
+        margin: 8% auto;
+    }
+}
+@media screen and (max-width: 630px) {
+    .modal-content {
+        margin: 12% auto;
+        width: 35em;
+    }
+    .modal-header {
+        margin-bottom: 1em;
+    }
+    .modal-button {
+        margin-bottom: 0.5em;
+    }
+}
+@media screen and (max-width: 550px) {
+    .modal-content {
+        width: 30em;
+    }
+}
+@media screen and (max-width: 470px) {
+    .modal-content {
+        margin: 13% auto;
+        width: 25em;
+    }
+}
+@media screen and (max-width: 400px) {
+    .modal-content {
+        width: 22em;
+    }
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
