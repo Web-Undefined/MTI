@@ -97,10 +97,10 @@
 				<!-- Dropdown -->
 				<div style="display: flex; justify-content: center; padding-bottom: 1em">
 					<select id="panelSelector" onchange="switchPanel()" style="width: 60%;">
-						<!-- <option value="panel1">Week 1 - January 6th</option>
+						<option value="panel1">Week 1 - January 6th</option>
 						<option value="panel2">Week 2 - January 13th</option>
 						<option value="panel3">Week 3 - January 20th</option>
-						<option value="panel4">Week 4 - January 27th (Advanced)</option> -->
+						<option value="panel4">Week 4 - January 27th</option>
 
 						<option value="panel5">Week 5 - February 3rd</option>
 						<option value="panel6">Week 6 - February 10th</option>
@@ -110,7 +110,7 @@
 				</div>
 
 				<!-- Buy Button Panels -->
-				<!-- <div id="panel1">
+				<div id="panel1">
 					<div class="buyButtonContainer">
 						<div id='product-component-1715651863580' class="buyButton"></div>
 						<div id='product-component-1715652106039' class="buyButton"></div>
@@ -129,10 +129,10 @@
 				</div>
 				<div id="panel4" style="visibility: hidden">
 					<div class="buyButtonContainer">
-						<div id='product-component-1715653713799' class="buyButton"></div>
+						<div id='product-component-1722281547168' class="buyButton"></div>
 						<div id='product-component-1715654255387' class="buyButton"></div>
 					</div>
-				</div> -->
+				</div>
 
 				<div id="panel5">
 					<div class="buyButtonContainer">
@@ -164,10 +164,10 @@
 						var selectedOption = document.getElementById("panelSelector").value;
 
 						// Hide all panels
-						// document.getElementById("panel1").style.display = "none";
-						// document.getElementById("panel2").style.display = "none";
-						// document.getElementById("panel3").style.display = "none";
-						// document.getElementById("panel4").style.display = "none";
+						document.getElementById("panel1").style.display = "none";
+						document.getElementById("panel2").style.display = "none";
+						document.getElementById("panel3").style.display = "none";
+						document.getElementById("panel4").style.display = "none";
 						document.getElementById("panel5").style.display = "none";
 						document.getElementById("panel6").style.display = "none";
 						document.getElementById("panel7").style.display = "none";
@@ -846,10 +846,10 @@
 	<script>
 		$(document).ready(function () {
 			setTimeout(() => {
-				// document.getElementById("panel2").style.display = "none";
-				// document.getElementById("panel3").style.display = "none";
-				// document.getElementById("panel4").style.display = "none";
-				// document.getElementById("panel5").style.display = "none";
+				document.getElementById("panel2").style.display = "none";
+				document.getElementById("panel3").style.display = "none";
+				document.getElementById("panel4").style.display = "none";
+				document.getElementById("panel5").style.display = "none";
 				document.getElementById("panel6").style.display = "none";
 				document.getElementById("panel7").style.display = "none";
 				document.getElementById("panel8").style.display = "none";
